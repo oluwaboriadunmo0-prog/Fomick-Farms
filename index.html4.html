@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fomick Farm Produce</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="logo-wrap">
+      <img src="assets/logo.jpg" alt="Fomick Farms logo" />
+    </div>
+    <div class="hero-content">
+      <h1>Fomick Farm</h1>
+      <p>Your trusted source for fresh farm produce in IDO IBADAN, OYO STATE.</p>
+      <a href="#products" class="button">See Products</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" id="products">
+      <h2>What We Sell</h2>
+      <p>We offer quality animal produce and agricultural products for families, retailers, and local markets.</p>
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=800&q=80" alt="Chicken feed sacks" />
+          <h3>Chicken Feed</h3>
+          <p>Nutritious feed for healthy broilers and layers.</p>
+          <button onclick="showMessage('Chicken feed is available in bags and bulk orders.')">Learn More</button>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1546069901-eacef0df6022?auto=format&fit=crop&w=800&q=80" alt="Broiler chickens" />
+          <h3>Broiler Chickens</h3>
+          <p>Fresh broilers ready for market and home use.</p>
+          <button onclick="showMessage('Order broiler chickens for delivery or pickup.')">Learn More</button>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" alt="Layers birds" />
+          <h3>Layers</h3>
+          <p>High-quality layer birds for egg production.</p>
+          <button onclick="showMessage('Healthy layers for reliable egg production.')">Learn More</button>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Fresh eggs" />
+          <h3>Eggs</h3>
+          <p>Fresh eggs from our farm, packed daily.</p>
+          <button onclick="showMessage('Fresh eggs available by the crate or tray.')">Learn More</button>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1516685304081-de7947d419d7?auto=format&fit=crop&w=800&q=80" alt="Catfish" />
+          <h3>Catfish</h3>
+          <p>Fresh catfish raised in clean ponds.</p>
+          <button onclick="showMessage('Our catfish is fresh, healthy, and ready to cook.')">Learn More</button>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1571047399553-581aa8de2247?auto=format&fit=crop&w=800&q=80" alt="Palm oil" />
+          <h3>Palm Oil</h3>
+          <p>Pure palm oil produced straight from the farm.</p>
+          <button onclick="showMessage('Pure farm-made palm oil available in different sizes.')">Learn More</button>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1518183214770-9cffbec72538?auto=format&fit=crop&w=800&q=80" alt="Cows" />
+          <h3>Cows</h3>
+          <p>Healthy cows for sale and farm breeding.</p>
+          <button onclick="showMessage('Cows available for sale by breed and size.')">Learn More</button>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Agricultural products" />
+          <h3>Agricultural Products</h3>
+          <p>Various farm products grown and processed locally.</p>
+          <button onclick="showMessage('Explore our farm-grown agricultural products.')">Learn More</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <article class="gallery-card">
+          <img src="assets/gallery1.jpg" alt="Farm animals scene" />
+          <p>Fomick Farms livestock</p>
+        </article>
+        <article class="gallery-card">
+          <img src="assets/gallery1.jpg" alt="Egg laying hens" />
+          <p>Layer hens and fresh eggs</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div>
+        <h2>Contact Us</h2>
+        <p>Phone: <a href="tel:+08039236066">08039236066</a></p>
+        <p>Email: <a href="mailto:flakkyrolla@gmail.com">flakkyrolla@gmail.com</a></p>
+        <p>Location: <strong>IDO IBADAN, OYO STATE</strong></p>
+      </div>
+      <div class="contact-card">
+        <h3>Ready to order?</h3>
+        <p>Click the button below to send us a message and get a quick response.</p>
+        <button onclick="contactFarm()">Contact Farm</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Fomick Farm &bull; Fresh farm produce for local homes and markets.</p>
+  </footer>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
